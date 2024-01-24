@@ -4,6 +4,7 @@ const theme = Object.freeze({
     primaryLight: '#ffffff',
     secondDark: '#2D3436',
     primaryGray: '#616161',
+    green: '#5fcb39',
   },
   fontSizes: {
     tiny: '12px',
