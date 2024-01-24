@@ -1,11 +1,16 @@
 const theme = Object.freeze({
   colors: {
+    primaryDark: '#374234',
     primaryLight: '#ffffff',
-   
+    secondDark: '#2D3436',
+    primaryGray: '#616161',
   },
   fontSizes: {
     tiny: '12px',
-    
+    small: '16px',
+    medium: '18px',
+    large: '26px',
+    XL: '28px',
   },
 
   animation: {

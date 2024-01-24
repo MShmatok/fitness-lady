@@ -6,16 +6,17 @@ import Icon from 'components/Icon';
 const Header = () => {
   return (
     <>
-      <HeaderST>
-        <div className="container">
+      <div className="container">
+        <HeaderST>
           <nav>
             <RouterLink to={'/'}>
-              <Icon name="pharmacy" size="125px" />
-              <p>Food Mentor</p>
+              <Icon name="backArrow" height="30px" width="30px" />
+              <Icon name="back" className={'icon'} height="34px" width="34px" />
+              <h3>Food Mentor</h3>
             </RouterLink>
           </nav>
-        </div>
-      </HeaderST>
+        </HeaderST>{' '}
+      </div>
     </>
   );
 };

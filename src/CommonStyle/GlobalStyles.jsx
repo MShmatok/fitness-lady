@@ -13,6 +13,8 @@ export const GlobalStyles = createGlobalStyle`
 		font-style: normal;
 		background-color: ${theme.colors.primaryLight};
 		color: ${theme.colors.primaryDark};
+ 		 font-weight: 400;
+
 	}
 
 	h1,
@@ -53,7 +55,7 @@ export const GlobalStyles = createGlobalStyle`
 
 		[class="container"], [class$="main-container"] {
 		width: 380px;
-		padding: 0 20px;
+		padding: 0 10px;
 		margin: 0 auto;
 	}
 
