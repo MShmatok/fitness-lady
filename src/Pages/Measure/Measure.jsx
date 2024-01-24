@@ -8,7 +8,10 @@ import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
 
 const Measure = () => {
   const [isActive, SetActive] = useState(true);
-  const togglerHandler = () => {
+  const togglerHandler = e => {
+    if (e.currentTarget.className === 'active') {
+      return;
+    }
     SetActive(!isActive);
   };
 
