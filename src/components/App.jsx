@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from 'Pages/Home/Home';
 import { ContextProvider } from 'js/useContext';
+import Result from 'Pages/Result';
 
 // const Home = lazy(() => import('../Pages/Home/Home'));
 const NotFoundPage = lazy(() => import('../Pages/NotFoundPage/NotFoundPage'));
@@ -41,6 +42,11 @@ const createRouter = () => {
           {
             path: '/exercise',
             element: <Exercise />,
+            errorElement: <NotFoundPage />,
+          },
+          {
+            path: '/result',
+            element: <Result />,
             errorElement: <NotFoundPage />,
           },
           {
