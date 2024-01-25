@@ -7,6 +7,10 @@ export const FormaMeasureST = styled.form`
   align-items: flex-start;
   gap: ${prop => prop.$gap || '16px'};
   width: 100%;
+
+  button {
+    margin-top: 136px;
+  }
 `;
 
 export const FormLabel = styled.label`
