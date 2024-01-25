@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from 'CommonStyle/themeJSX';
+// import theme from 'CommonStyle/themeJSX';
 
 export const BehaviorsSection = styled.section`
   display: flex;
