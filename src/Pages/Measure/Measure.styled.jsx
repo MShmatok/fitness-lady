@@ -14,7 +14,6 @@ export const SwitchButtonContainer = styled.div`
 
   border-radius: 10px;
   border: 1px solid ${theme.colors.green};
-
   overflow: hidden;
 
   button {
