@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CardList, HomeSection } from './Home.styled';
 import {
   HeroContainer,
@@ -18,6 +18,16 @@ const library = [
 
 const Home = () => {
   const { updateData } = useMyContext();
+  useEffect(() => {
+    updateData({
+      goal: '',
+      height: '',
+      currentWeight: '',
+      units: '',
+      behaviors: [],
+      exercise: [],
+    });
+  }, []);
 
   const navigate = useNavigate();
   const handlerClick = goal => {
@@ -44,7 +54,7 @@ const Home = () => {
                 title={item.title}
                 icon={item.icon}
                 onClick={() => {
-                  handlerClick(item.goal);
+                  handlerClick(item.title);
                 }}
               />
             );

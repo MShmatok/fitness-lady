@@ -15,6 +15,8 @@ import { ReactComponent as Salt } from '../img/svg/Behaviors/salt.svg';
 import { ReactComponent as Pizza } from '../img/svg/Behaviors/pizza.svg';
 import { ReactComponent as Cross } from '../img/svg/Behaviors/cross.svg';
 
+import { ReactComponent as ActiveGirl } from '../img/svg/Exercise/activeGirl.svg';
+
 const Icon = ({ name, className, width, height }) => {
   switch (name) {
     case 'back':
@@ -42,6 +44,9 @@ const Icon = ({ name, className, width, height }) => {
       return <Pizza className={className} width={width} height={height} />;
     case 'cross':
       return <Cross className={className} width={width} height={height} />;
+
+    case 'activeGirl':
+      return <ActiveGirl className={className} width={width} height={height} />;
 
     default:
       break;

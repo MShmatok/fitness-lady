@@ -17,10 +17,9 @@ const library = [
   { Behavior: '6', title: 'None of the above', icon: 'cross' },
 ];
 const Behaviors = () => {
-  const { data, updateData } = useMyContext();
+  const { updateData } = useMyContext();
   const navigate = useNavigate();
 
-  console.log(data);
   const handlerSubmit = array => {
     updateData({
       behaviors: array,

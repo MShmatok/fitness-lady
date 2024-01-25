@@ -11,7 +11,7 @@ import { useMyContext } from 'js/useContext';
 
 const Measure = () => {
   const { data, updateData } = useMyContext();
-  console.log(data);
+
   const [isImperial, setImperial] = useState(() => {
     return data.units === 'Imperial' || !data.units;
   });
