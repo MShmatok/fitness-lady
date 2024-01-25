@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfitness_lady=self.webpackChunkfitness_lady||[]).push([[260],{2260:function(e,s,n){n.r(s);var a=n(4831),t=(n(2791),n(184));s.default=function(){var e=(0,a.D)().data;return console.log(e),(0,t.jsx)("div",{children:"Exercise"})}}}]);
+//# sourceMappingURL=260.4c7b08da.chunk.js.map
