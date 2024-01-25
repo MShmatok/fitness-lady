@@ -1,4 +1,4 @@
-import { measureSchema } from 'components/SchemaValidation/measureSchema';
+import { measureSchema } from 'js/SchemaValidation/measureSchema';
 import { useFormik } from 'formik';
 import React from 'react';
 import {
@@ -9,20 +9,29 @@ import {
 } from './FormaMeasure.styled';
 import { ButtonBase } from 'CommonStyle/Button.styled';
 
-const FormaMeasure = ({ units }) => {
-  const { values, touched, errors, handleSubmit, handleChange, handleBlur } =
-    useFormik({
-      initialValues: {
-        height: '',
-        currentWeight: '',
-      },
-      validationSchema: measureSchema,
-    });
-
-  const submitHandler = () => {};
+const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
+  const {
+    values,
+    touched,
+    errors,
+    handleSubmit,
+    handleChange,
+    isValid,
+    dirty,
+    handleBlur,
+  } = useFormik({
+    initialValues: {
+      height: dataInitial.height,
+      currentWeight: dataInitial.currentWeight,
+    },
+    validationSchema: measureSchema,
+    onSubmit: values => {
+      handlerClick(values.height, values.currentWeight);
+    },
+  });
 
   return (
-    <FormaMeasureST>
+    <FormaMeasureST onSubmit={handleSubmit}>
       <FormLabel>
         <Input
           type="number"
@@ -54,7 +63,10 @@ const FormaMeasure = ({ units }) => {
         )}
       </FormLabel>
 
-      <ButtonBase disabled onSubmit={submitHandler}>
+      <ButtonBase
+        type="submit"
+        disabled={!isValid || (!values.height && !values.currentWeight)}
+      >
         Continue
       </ButtonBase>
     </FormaMeasureST>

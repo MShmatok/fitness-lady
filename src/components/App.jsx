@@ -2,6 +2,7 @@ import { lazy } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from 'Pages/Home/Home';
+import { ContextProvider } from 'js/useContext';
 
 // const Home = lazy(() => import('../Pages/Home/Home'));
 const NotFoundPage = lazy(() => import('../Pages/NotFoundPage/NotFoundPage'));
@@ -58,7 +59,9 @@ const createRouter = () => {
 export const App = () => {
   return (
     <>
-      <RouterProvider router={createRouter()} />
+      <ContextProvider>
+        <RouterProvider router={createRouter()} />
+      </ContextProvider>
     </>
   );
 };

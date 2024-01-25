@@ -6,16 +6,29 @@ import {
 import React, { useState } from 'react';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
 import FormaMeasure from 'components/FormaMeasure/FormaMeasure';
+import { useNavigate } from 'react-router-dom';
+import { useMyContext } from 'js/useContext';
 
 const Measure = () => {
-  const [isImperial, setImperial] = useState(true);
+  const { data, updateData } = useMyContext();
+  console.log(data);
+  const [isImperial, setImperial] = useState(data.units === 'Imperial');
+  const navigate = useNavigate();
+
   const togglerHandler = e => {
     if (e.currentTarget.className === 'active') {
       return;
     }
     setImperial(!isImperial);
   };
-
+  const handlerClick = (height, currentWeight) => {
+    updateData({
+      height,
+      currentWeight,
+      units: isImperial ? 'Imperial' : 'Metric',
+    });
+    navigate('/behaviors', { replace: false });
+  };
   return (
     <div className="container">
       <MeasureSection>
@@ -40,7 +53,11 @@ const Measure = () => {
           </button>
         </SwitchButtonContainer>
 
-        <FormaMeasure units={isImperial} />
+        <FormaMeasure
+          units={isImperial}
+          handlerClick={handlerClick}
+          dataInitial={data}
+        />
       </MeasureSection>
     </div>
   );

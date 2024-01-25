@@ -7,6 +7,7 @@ import {
 } from 'CommonStyle/Hero.styled';
 import Card from './Item/Card';
 import { useNavigate } from 'react-router-dom';
+import { useMyContext } from 'js/useContext';
 
 const library = [
   { goal: '1', title: 'Lose Weight', icon: 'lady_1' },
@@ -16,9 +17,11 @@ const library = [
 ];
 
 const Home = () => {
+  const { updateData } = useMyContext();
+
   const navigate = useNavigate();
   const handlerClick = goal => {
-    console.log(goal);
+    updateData({ goal });
     navigate('/measure', { replace: true });
   };
   return (
