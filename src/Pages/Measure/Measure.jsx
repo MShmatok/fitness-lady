@@ -5,7 +5,7 @@ import {
 } from 'CommonStyle/Hero.styled';
 import React, { useState } from 'react';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
-import FormaMeasure from 'components/FormaMeasure/FormaMeasure';
+import FormaMeasure from 'components/forms/FormaMeasure/FormaMeasure';
 import { useNavigate } from 'react-router-dom';
 import { useMyContext } from 'js/useContext';
 

@@ -26,6 +26,7 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
     },
     validationSchema: measureSchema,
     onSubmit: values => {
+      console.log('values', values);
       handlerClick(values.height, values.currentWeight);
     },
   });
