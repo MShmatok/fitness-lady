@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfitness_lady=self.webpackChunkfitness_lady||[]).push([[238],{2238:function(e,n,s){s.r(n);s(2791);var t=s(184);n.default=function(){return(0,t.jsx)("div",{children:"Goal"})}}}]);
+//# sourceMappingURL=238.d23b0b3a.chunk.js.map

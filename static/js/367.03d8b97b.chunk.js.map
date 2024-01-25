@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/367.03d8b97b.chunk.js","mappings":"2IAMA,UAJkB,WAChB,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,aACd,C","sources":["Pages/Behaviors/Behaviors.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst Behaviors = () => {\r\n  return <div>Behaviors</div>;\r\n};\r\n\r\nexport default Behaviors;\r\n"],"names":["_jsx","children"],"sourceRoot":""}

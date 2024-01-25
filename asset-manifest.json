@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/fitness-lady/static/css/main.cd2e038f.css",
-    "main.js": "/fitness-lady/static/js/main.ef88da17.js",
-    "static/js/156.12ec89f3.chunk.js": "/fitness-lady/static/js/156.12ec89f3.chunk.js",
-    "static/js/238.2e7749ff.chunk.js": "/fitness-lady/static/js/238.2e7749ff.chunk.js",
-    "static/js/698.b45ad8af.chunk.js": "/fitness-lady/static/js/698.b45ad8af.chunk.js",
-    "static/js/367.03d8b97b.chunk.js": "/fitness-lady/static/js/367.03d8b97b.chunk.js",
-    "static/js/260.847dc020.chunk.js": "/fitness-lady/static/js/260.847dc020.chunk.js",
+    "main.js": "/fitness-lady/static/js/main.37341611.js",
+    "static/js/156.1d10b8ce.chunk.js": "/fitness-lady/static/js/156.1d10b8ce.chunk.js",
+    "static/js/238.d23b0b3a.chunk.js": "/fitness-lady/static/js/238.d23b0b3a.chunk.js",
+    "static/js/763.25053198.chunk.js": "/fitness-lady/static/js/763.25053198.chunk.js",
+    "static/js/367.428f522c.chunk.js": "/fitness-lady/static/js/367.428f522c.chunk.js",
+    "static/js/260.3f4bdda2.chunk.js": "/fitness-lady/static/js/260.3f4bdda2.chunk.js",
+    "static/js/568.55db3dd5.chunk.js": "/fitness-lady/static/js/568.55db3dd5.chunk.js",
     "static/media/lady_3.svg": "/fitness-lady/static/media/lady_3.23ec4572b129e3a8b1ec293c901631bc.svg",
     "static/media/lady_4.svg": "/fitness-lady/static/media/lady_4.7078a4fb4b583440843eb3e773aa6f8c.svg",
     "static/media/lady_2.svg": "/fitness-lady/static/media/lady_2.23d782e61c0fdd6e343b030f21b503bb.svg",
@@ -15,15 +16,16 @@
     "index.html": "/fitness-lady/index.html",
     "static/media/backArrow.svg": "/fitness-lady/static/media/backArrow.ed3592f86fc5badab70c408b0450c0fe.svg",
     "main.cd2e038f.css.map": "/fitness-lady/static/css/main.cd2e038f.css.map",
-    "main.ef88da17.js.map": "/fitness-lady/static/js/main.ef88da17.js.map",
-    "156.12ec89f3.chunk.js.map": "/fitness-lady/static/js/156.12ec89f3.chunk.js.map",
-    "238.2e7749ff.chunk.js.map": "/fitness-lady/static/js/238.2e7749ff.chunk.js.map",
-    "698.b45ad8af.chunk.js.map": "/fitness-lady/static/js/698.b45ad8af.chunk.js.map",
-    "367.03d8b97b.chunk.js.map": "/fitness-lady/static/js/367.03d8b97b.chunk.js.map",
-    "260.847dc020.chunk.js.map": "/fitness-lady/static/js/260.847dc020.chunk.js.map"
+    "main.37341611.js.map": "/fitness-lady/static/js/main.37341611.js.map",
+    "156.1d10b8ce.chunk.js.map": "/fitness-lady/static/js/156.1d10b8ce.chunk.js.map",
+    "238.d23b0b3a.chunk.js.map": "/fitness-lady/static/js/238.d23b0b3a.chunk.js.map",
+    "763.25053198.chunk.js.map": "/fitness-lady/static/js/763.25053198.chunk.js.map",
+    "367.428f522c.chunk.js.map": "/fitness-lady/static/js/367.428f522c.chunk.js.map",
+    "260.3f4bdda2.chunk.js.map": "/fitness-lady/static/js/260.3f4bdda2.chunk.js.map",
+    "568.55db3dd5.chunk.js.map": "/fitness-lady/static/js/568.55db3dd5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.ef88da17.js"
+    "static/js/main.37341611.js"
   ]
 }
