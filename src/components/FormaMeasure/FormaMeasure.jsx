@@ -17,7 +17,7 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
     handleSubmit,
     handleChange,
     isValid,
-    dirty,
+
     handleBlur,
   } = useFormik({
     initialValues: {
