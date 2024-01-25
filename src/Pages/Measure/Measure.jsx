@@ -5,14 +5,15 @@ import {
 } from 'CommonStyle/Hero.styled';
 import React, { useState } from 'react';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
+import FormaMeasure from 'components/FormaMeasure/FormaMeasure';
 
 const Measure = () => {
-  const [isActive, SetActive] = useState(true);
+  const [isImperial, setImperial] = useState(true);
   const togglerHandler = e => {
     if (e.currentTarget.className === 'active') {
       return;
     }
-    SetActive(!isActive);
+    setImperial(!isImperial);
   };
 
   return (
@@ -25,13 +26,21 @@ const Measure = () => {
           </MainDescription>
         </HeroContainer>
         <SwitchButtonContainer>
-          <button onClick={togglerHandler} className={isActive ? 'active' : ''}>
+          <button
+            onClick={togglerHandler}
+            className={isImperial ? 'active' : ''}
+          >
             Imperial
           </button>
-          <button onClick={togglerHandler} className={isActive ? '' : 'active'}>
+          <button
+            onClick={togglerHandler}
+            className={isImperial ? '' : 'active'}
+          >
             Metric
           </button>
         </SwitchButtonContainer>
+
+        <FormaMeasure units={isImperial} />
       </MeasureSection>
     </div>
   );
