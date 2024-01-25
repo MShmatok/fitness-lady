@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { CardList, HomeSection } from './Home.styled';
 import {
   HeroContainer,
@@ -18,16 +18,8 @@ const library = [
 
 const Home = () => {
   const { updateData } = useMyContext();
-  useEffect(() => {
-    updateData({
-      goal: '',
-      height: '',
-      currentWeight: '',
-      units: '',
-      behaviors: [],
-      exercise: [],
-    });
-  }, []);
+
+  // clearData();
 
   const navigate = useNavigate();
   const handlerClick = goal => {
