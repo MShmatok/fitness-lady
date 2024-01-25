@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/260.847dc020.chunk.js","mappings":"2IAMA,UAJiB,WACf,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,YACd,C","sources":["Pages/Exercise/Exercise.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst Exercise = () => {\r\n  return <div>Exercise</div>;\r\n};\r\n\r\nexport default Exercise;\r\n"],"names":["_jsx","children"],"sourceRoot":""}
