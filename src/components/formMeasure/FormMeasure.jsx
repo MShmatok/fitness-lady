@@ -1,15 +1,11 @@
-import { measureSchema } from 'js/SchemaValidation/measureSchema';
-import { useFormik } from 'formik';
 import React from 'react';
-import {
-  FormLabel,
-  FormaMeasureST,
-  Input,
-  InputError,
-} from './FormaMeasure.styled';
-import { ButtonBase } from 'CommonStyle/Button.styled';
+import { useFormik } from 'formik';
 
-const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
+import { measureSchema } from 'js/schemaValidation/measureSchema';
+import { LabelST, FormST, InputST, InputErrorST } from './FormMeasure.styled';
+import { Button } from 'commonStyle/Button.styled';
+
+const FormMeasure = ({ units, handlerClick, dataInitial }) => {
   const {
     values,
     touched,
@@ -17,7 +13,6 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
     handleSubmit,
     handleChange,
     isValid,
-
     handleBlur,
   } = useFormik({
     initialValues: {
@@ -31,9 +26,9 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
   });
 
   return (
-    <FormaMeasureST onSubmit={handleSubmit}>
-      <FormLabel>
-        <Input
+    <FormST onSubmit={handleSubmit}>
+      <LabelST>
+        <InputST
           type="number"
           step="0.001"
           name="height"
@@ -44,11 +39,11 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
           error={touched.height && errors.height}
         />
         {touched.height && errors.height && (
-          <InputError>{errors.height}</InputError>
+          <InputErrorST>{errors.height}</InputErrorST>
         )}
-      </FormLabel>
-      <FormLabel>
-        <Input
+      </LabelST>
+      <LabelST>
+        <InputST
           type="number"
           step="0.001"
           name="currentWeight"
@@ -59,18 +54,18 @@ const FormaMeasure = ({ units, handlerClick, dataInitial }) => {
           error={touched.currentWeight && errors.currentWeight}
         />
         {touched.currentWeight && errors.currentWeight && (
-          <InputError>{errors.currentWeight}</InputError>
+          <InputErrorST>{errors.currentWeight}</InputErrorST>
         )}
-      </FormLabel>
+      </LabelST>
 
-      <ButtonBase
+      <Button
         type="submit"
         disabled={!isValid || (!values.height && !values.currentWeight)}
       >
         Continue
-      </ButtonBase>
-    </FormaMeasureST>
+      </Button>
+    </FormST>
   );
 };
 
-export default FormaMeasure;
+export default FormMeasure;

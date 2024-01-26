@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from './themeJSX';
+import theme from './variables';
 
 export const GlobalStyles = createGlobalStyle`
 	html {
@@ -7,14 +7,12 @@ export const GlobalStyles = createGlobalStyle`
 	}
 	body {
 		font-family: 'Inter', sans-serif;
-
 		min-height: 100vh;
 		font-size: ${theme.fontSizes.medium};
 		font-style: normal;
 		background-color: ${theme.colors.primaryLight};
 		color: ${theme.colors.primaryDark};
- 		 font-weight: 400;
-
+ 		font-weight: 400;
 	}
 
 	h1,
@@ -53,29 +51,12 @@ export const GlobalStyles = createGlobalStyle`
 		height: auto;
 	}
 
-		[class="container"], [class$="main-container"] {
+		[class="container"]{
 		width: 380px;
 		padding: 0 10px;
 		margin: 0 auto;
 	}
 
-
-/* ----------------Loader CSS--------------- */
-.LoaderWr {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-
-}
-.LoaderWrCon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* z-index: 12000000000000; */
-}
 
 /* ---------------- Input arrow -------------- */
 input[type='number']::-webkit-outer-spin-button,

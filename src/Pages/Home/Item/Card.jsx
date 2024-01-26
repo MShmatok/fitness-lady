@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardContainer } from './Card.styled';
-import Icon from 'components/Icon';
+import Icon from 'components/icon/Icon';
 
 const Card = ({ icon, title, onClick }) => {
   return (

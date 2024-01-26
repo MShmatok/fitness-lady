@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import theme from 'CommonStyle/themeJSX';
+import theme from 'commonStyle/variables';
 
-export const FormaMeasureST = styled.form`
+export const FormST = styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -13,7 +13,7 @@ export const FormaMeasureST = styled.form`
   }
 `;
 
-export const FormLabel = styled.label`
+export const LabelST = styled.label`
   font-size: ${prop => prop.$fontSize || '16px'};
   font-weight: ${prop => prop.$fontWeight || '400'};
   line-height: calc(20 / ${prop => parseInt(prop.$fontSize, 10) || '16'});
@@ -24,17 +24,16 @@ export const FormLabel = styled.label`
   gap: 8px;
   width: 100%;
 `;
-export const Input = styled.input`
+
+export const InputST = styled.input`
   color: ${theme.colors.secondDark};
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.25px;
   padding: 19px 13px;
-
   border-radius: 10px;
   border: 1px solid ${theme.colors.secondGrey};
   background: ${theme.colors.primaryLight};
-
   width: 100%;
 
   &:focus {
@@ -45,7 +44,7 @@ export const Input = styled.input`
   }
 `;
 
-export const InputError = styled.p`
+export const InputErrorST = styled.p`
   font-size: 14px;
   line-height: calc(18 / 14);
   color: ${theme.colors.red};

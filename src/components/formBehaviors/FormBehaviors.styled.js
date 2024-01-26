@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import theme from 'CommonStyle/themeJSX';
+import theme from 'commonStyle/variables';
 
-export const FormaBehaviorsST = styled.form`
+export const FormST = styled.form`
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -9,14 +9,14 @@ export const FormaBehaviorsST = styled.form`
     margin-top: 136px;
   }
 `;
-export const InputBehaviorST = styled.label`
+export const InputST = styled.label`
   input:checked + div {
     border: 2px solid ${theme.colors.green};
     scale: 1.03;
   }
 `;
 
-export const Wrapper = styled.div`
+export const WrapperST = styled.div`
   display: flex;
   gap: 10px;
   width: 172px;

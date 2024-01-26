@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import theme from 'CommonStyle/themeJSX';
+import theme from 'commonStyle/variables';
 
-export const ButtonBase = styled.button`
+export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;

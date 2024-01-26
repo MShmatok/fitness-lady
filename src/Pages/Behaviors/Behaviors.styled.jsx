@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-// import theme from 'CommonStyle/themeJSX';
 
-export const BehaviorsSection = styled.section`
+export const BehaviorsSectionST = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;

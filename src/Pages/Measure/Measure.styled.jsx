@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from 'CommonStyle/themeJSX';
+import theme from 'commonStyle/variables';
 
 export const MeasureSection = styled.section`
   display: flex;
@@ -8,6 +8,7 @@ export const MeasureSection = styled.section`
   padding: 15px 0;
   gap: 15px;
 `;
+
 export const SwitchButtonContainer = styled.div`
   display: flex;
   justify-content: center;

@@ -1,10 +1,10 @@
 import React from 'react';
-import { InputBehaviorST, Wrapper } from './FormaBehaviors.styled';
-import Icon from 'components/Icon';
+import { InputST, WrapperST } from './FormBehaviors.styled';
+import Icon from 'components/icon/Icon';
 
-const InputBehavior = ({ title, icon, handleInputChange, checkIncludes }) => {
+const Input = ({ title, icon, handleInputChange, checkIncludes }) => {
   return (
-    <InputBehaviorST>
+    <InputST>
       <input
         type="checkbox"
         name="inputGroup"
@@ -13,14 +13,14 @@ const InputBehavior = ({ title, icon, handleInputChange, checkIncludes }) => {
         checked={checkIncludes(title) || false}
         onChange={handleInputChange}
       />
-      <Wrapper>
+      <WrapperST>
         <div>
           <Icon name={icon} width="30px" height="30px" />
         </div>
         <h3>{title}</h3>
-      </Wrapper>
-    </InputBehaviorST>
+      </WrapperST>
+    </InputST>
   );
 };
 
-export default InputBehavior;
+export default Input;
