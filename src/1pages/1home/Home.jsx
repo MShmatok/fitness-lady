@@ -7,7 +7,7 @@ import {
   MainDescription,
   MainTitle,
 } from '1commonStyle/Hero.styled';
-import Card from './item/Card';
+import Card from './1item/Card';
 
 const library = [
   { goal: '1', title: 'Lose Weight', icon: 'lady_1' },
