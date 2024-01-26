@@ -5,9 +5,9 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'commonStyle/Hero.styled';
+} from '1commonStyle/Hero.styled';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
-import FormMeasure from 'components/formMeasure/FormMeasure';
+import FormMeasure from 'components/1formMeasure/FormMeasure';
 
 const Measure = () => {
   const { data, updateData } = useMyContext();

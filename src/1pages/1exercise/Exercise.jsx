@@ -7,7 +7,7 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'commonStyle/Hero.styled';
+} from '1commonStyle/Hero.styled';
 
 const library = [
   { exercise: '1', title: 'Hardly at all' },

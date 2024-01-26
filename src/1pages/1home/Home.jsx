@@ -6,7 +6,7 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'commonStyle/Hero.styled';
+} from '1commonStyle/Hero.styled';
 import Card from './item/Card';
 
 const library = [
