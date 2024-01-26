@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useMyContext } from 'js/useContext';
 import { CardList, HomeSection } from './Home.styled';
 import {
   HeroContainer,
@@ -6,8 +8,6 @@ import {
   MainTitle,
 } from 'commonStyle/Hero.styled';
 import Card from './item/Card';
-import { useNavigate } from 'react-router-dom';
-import { useMyContext } from 'js/useContext';
 
 const library = [
   { goal: '1', title: 'Lose Weight', icon: 'lady_1' },
@@ -18,14 +18,13 @@ const library = [
 
 const Home = () => {
   const { updateData } = useMyContext();
-
-  // clearData();
-
   const navigate = useNavigate();
+
   const handlerClick = goal => {
     updateData({ goal });
     navigate('/measure', { replace: true });
   };
+
   return (
     <div className="container">
       <HomeSection>
@@ -36,7 +35,6 @@ const Home = () => {
             Balanced nutrition will let you achieve them
           </MainDescription>
         </HeroContainer>
-
         <h2>What are your goals?</h2>
         <CardList>
           {library.map(item => {

@@ -26,7 +26,7 @@ const Behaviors = () => {
     updateData({
       behaviors: array,
     });
-    navigate('/exercise', { replace: false });
+    navigate('/exercise', { replace: true });
   };
 
   return (

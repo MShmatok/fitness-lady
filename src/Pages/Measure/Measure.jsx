@@ -1,17 +1,16 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useMyContext } from 'js/useContext';
 import {
   HeroContainer,
   MainDescription,
   MainTitle,
 } from 'commonStyle/Hero.styled';
-import React, { useState } from 'react';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
 import FormMeasure from 'components/formMeasure/FormMeasure';
-import { useNavigate } from 'react-router-dom';
-import { useMyContext } from 'js/useContext';
 
 const Measure = () => {
   const { data, updateData } = useMyContext();
-
   const [isImperial, setImperial] = useState(() => {
     return data.units === 'Imperial' || !data.units;
   });
@@ -23,14 +22,16 @@ const Measure = () => {
     }
     setImperial(!isImperial);
   };
+
   const handlerClick = (height, currentWeight) => {
     updateData({
       height,
       currentWeight,
       units: isImperial ? 'Imperial' : 'Metric',
     });
-    navigate('/behaviors', { replace: false });
+    navigate('/behaviors', { replace: true });
   };
+
   return (
     <div className="container">
       <MeasureSection>

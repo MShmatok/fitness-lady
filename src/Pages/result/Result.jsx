@@ -1,6 +1,5 @@
-import { useMyContext } from 'js/useContext';
 import React from 'react';
-
+import { useMyContext } from 'js/useContext';
 import { HeroContainer, MainTitle } from 'commonStyle/Hero.styled';
 import { ExerciseSection } from '../exercise/Exercise.styled';
 

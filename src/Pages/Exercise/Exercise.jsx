@@ -1,7 +1,6 @@
 import React from 'react';
 import { useMyContext } from 'js/useContext';
 import { useNavigate } from 'react-router';
-
 import Icon from 'components/icon/Icon';
 import { ExerciseSection, WrapperMain } from './Exercise.styled';
 import {
@@ -25,6 +24,7 @@ const Exercise = () => {
     updateData({ exercise });
     navigate('/result', { replace: true });
   };
+
   return (
     <div className="container">
       <ExerciseSection>
@@ -36,7 +36,6 @@ const Exercise = () => {
           </MainDescription>
         </HeroContainer>
         <h2>How active are you during the day?</h2>
-
         <WrapperMain>
           <div>
             <Icon name="activeGirl" width="173px" height="363px" />
