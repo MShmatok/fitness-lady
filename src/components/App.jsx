@@ -4,13 +4,13 @@ import Layout from './1layout/Layout';
 
 import { ContextProvider } from 'js/useContext';
 
-const Home = lazy(() => import('../pages/home/Home'));
-const Measure = lazy(() => import('../pages/1measure/Measure'));
-const Behaviors = lazy(() => import('../pages/1behaviors/Behaviors'));
-const Exercise = lazy(() => import('../pages/1exercise/Exercise'));
-const Result = lazy(() => import('../pages/1result/Result'));
+const Home = lazy(() => import('../1pages/1home/Home'));
+const Measure = lazy(() => import('../1pages/1measure/Measure'));
+const Behaviors = lazy(() => import('../1pages/1behaviors/Behaviors'));
+const Exercise = lazy(() => import('../1pages/1exercise/Exercise'));
+const Result = lazy(() => import('../1pages/1result/Result'));
 
-const NotFoundPage = lazy(() => import('../pages/1notFoundPage/NotFoundPage'));
+const NotFoundPage = lazy(() => import('../1pages/1notFoundPage/NotFoundPage'));
 
 const createRouter = () => {
   const router = createBrowserRouter(
