@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 
-import { measureSchema } from 'js/schemaValidation/measureSchema';
+import { measureSchema } from 'js/1schemaValidation/measureSchema';
 import { LabelST, FormST, InputST, InputErrorST } from './FormMeasure.styled';
 import { Button } from '1commonStyle/Button.styled';
 
