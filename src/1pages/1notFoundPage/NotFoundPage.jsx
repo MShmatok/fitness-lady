@@ -1,4 +1,4 @@
-import { MeasureSection } from 'pages/measure/Measure.styled';
+import { MeasureSection } from 'pages/1measure/Measure.styled';
 import React from 'react';
 
 const NotFoundPage = () => {

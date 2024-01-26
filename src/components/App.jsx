@@ -1,16 +1,16 @@
 import { lazy } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './layout/Layout';
+import Layout from './1layout/Layout';
 
 import { ContextProvider } from 'js/useContext';
 
 const Home = lazy(() => import('../pages/home/Home'));
-const Measure = lazy(() => import('../pages/measure/Measure'));
-const Behaviors = lazy(() => import('../pages/behaviors/Behaviors'));
-const Exercise = lazy(() => import('../pages/exercise/Exercise'));
-const Result = lazy(() => import('../pages/result/Result'));
+const Measure = lazy(() => import('../pages/1measure/Measure'));
+const Behaviors = lazy(() => import('../pages/1behaviors/Behaviors'));
+const Exercise = lazy(() => import('../pages/1exercise/Exercise'));
+const Result = lazy(() => import('../pages/1result/Result'));
 
-const NotFoundPage = lazy(() => import('../pages/notFoundPage/NotFoundPage'));
+const NotFoundPage = lazy(() => import('../pages/1notFoundPage/NotFoundPage'));
 
 const createRouter = () => {
   const router = createBrowserRouter(
