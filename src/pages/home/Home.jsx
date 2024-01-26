@@ -6,8 +6,8 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from '1commonStyle/Hero.styled';
-import Card from './1item/Card';
+} from 'commonStyle/Hero.styled';
+import Card from './item/Card';
 
 const library = [
   { goal: '1', title: 'Lose Weight', icon: 'lady_1' },

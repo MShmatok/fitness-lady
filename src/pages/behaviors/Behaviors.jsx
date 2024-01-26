@@ -5,8 +5,8 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from '1commonStyle/Hero.styled';
-import FormBehaviors from 'components/1formBehaviors/FormBehaviors';
+} from 'commonStyle/Hero.styled';
+import FormBehaviors from 'components/formBehaviors/FormBehaviors';
 import { BehaviorsSectionST } from './Behaviors.styled';
 
 const library = [
