@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Input from './Input';
+import PropTypes from 'prop-types'; // ES6
 import { FormST } from './FormBehaviors.styled';
 import { Button } from 'commonStyle/Button.styled';
 
@@ -54,3 +55,13 @@ const FormBehaviors = ({ data, handlerSubmit }) => {
 };
 
 export default FormBehaviors;
+
+FormBehaviors.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  handlerSubmit: PropTypes.func.isRequired,
+};

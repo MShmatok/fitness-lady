@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // ES6
 
 import { ReactComponent as Back } from '../../images/svg/general/back.svg';
 import { ReactComponent as BackArrow } from '../../images/svg/general/backArrow.svg';
@@ -53,3 +54,10 @@ const Icon = ({ name, className, width, height }) => {
 };
 
 export default Icon;
+
+Icon.propTypes = {
+  name: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+};

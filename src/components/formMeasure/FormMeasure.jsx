@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import PropTypes from 'prop-types'; // ES6
 
 import { measureSchema } from 'js/schemaValidation/measureSchema';
 import { LabelST, FormST, InputST, InputErrorST } from './FormMeasure.styled';
@@ -69,3 +70,12 @@ const FormMeasure = ({ units, handlerClick, dataInitial }) => {
 };
 
 export default FormMeasure;
+
+FormMeasure.propTypes = {
+  units: PropTypes.bool.isRequired,
+  handlerClick: PropTypes.func.isRequired,
+  dataInitial: PropTypes.shape({
+    height: PropTypes.number.isRequired,
+    currentWeight: PropTypes.number.isRequired,
+  }).isRequired,
+};
