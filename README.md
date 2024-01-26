@@ -36,14 +36,6 @@ To get started with Fitness Lady, follow these simple steps:
 3. Start the application with `npm start`.
 4. Access the app through your preferred web browser.
 
-### Usage
-
-- Browse the catalog of cars on the home page.
-- Use the filters to narrow down your search based on make, rental price, and
-  mileage. - Click the heart icon to add a car to your favorites.
-- Click the "Learn more" button to view detailed information about a car.
-- Contact the rental company by clicking the "Rental car" link.
-
 ### Technologies
 
 - React
