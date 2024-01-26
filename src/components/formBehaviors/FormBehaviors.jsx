@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Input from './Input';
 import { FormST } from './FormBehaviors.styled';
-import { Button } from '1commonStyle/Button.styled';
+import { Button } from 'commonStyle/Button.styled';
 
 const FormBehaviors = ({ data, handlerSubmit }) => {
   const [selectedInputs, setSelectedInputs] = useState([]);
