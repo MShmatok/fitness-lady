@@ -1,7 +1,6 @@
 import React from 'react';
 import { HeaderST, RouterLink } from './Header.styled';
-
-import Icon from 'components/Icon';
+import Icon from 'components/icon/Icon';
 
 const Header = () => {
   return (

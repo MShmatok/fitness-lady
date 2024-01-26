@@ -1,17 +1,16 @@
 import { lazy } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './Layout/Layout';
-import Home from 'Pages/Home/Home';
+import Layout from './layout/Layout';
+
 import { ContextProvider } from 'js/useContext';
-import Result from 'Pages/Result';
 
-// const Home = lazy(() => import('../Pages/Home/Home'));
-const NotFoundPage = lazy(() => import('../Pages/NotFoundPage/NotFoundPage'));
+const Home = lazy(() => import('../pages/home/Home'));
+const Measure = lazy(() => import('../pages/measure/Measure'));
+const Behaviors = lazy(() => import('../pages/behaviors/Behaviors'));
+const Exercise = lazy(() => import('../pages/exercise/Exercise'));
+const Result = lazy(() => import('../pages/result/Result'));
 
-const Goal = lazy(() => import('../Pages/Goal/Goal'));
-const Measure = lazy(() => import('../Pages/Measure/Measure'));
-const Behaviors = lazy(() => import('../Pages/Behaviors/Behaviors'));
-const Exercise = lazy(() => import('../Pages/Exercise/Exercise'));
+const NotFoundPage = lazy(() => import('../pages/notFoundPage/NotFoundPage'));
 
 const createRouter = () => {
   const router = createBrowserRouter(
@@ -22,11 +21,6 @@ const createRouter = () => {
           {
             path: '/',
             element: <Home />,
-            errorElement: <NotFoundPage />,
-          },
-          {
-            path: '/goal',
-            element: <Goal />,
             errorElement: <NotFoundPage />,
           },
           {
@@ -64,10 +58,8 @@ const createRouter = () => {
 
 export const App = () => {
   return (
-    <>
-      <ContextProvider>
-        <RouterProvider router={createRouter()} />
-      </ContextProvider>
-    </>
+    <ContextProvider>
+      <RouterProvider router={createRouter()} />
+    </ContextProvider>
   );
 };

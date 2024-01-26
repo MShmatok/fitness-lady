@@ -2,10 +2,10 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'CommonStyle/Hero.styled';
+} from 'commonStyle/Hero.styled';
 import React, { useState } from 'react';
 import { MeasureSection, SwitchButtonContainer } from './Measure.styled';
-import FormaMeasure from 'components/forms/FormaMeasure/FormaMeasure';
+import FormMeasure from 'components/formMeasure/FormMeasure';
 import { useNavigate } from 'react-router-dom';
 import { useMyContext } from 'js/useContext';
 
@@ -55,7 +55,7 @@ const Measure = () => {
           </button>
         </SwitchButtonContainer>
 
-        <FormaMeasure
+        <FormMeasure
           units={isImperial}
           handlerClick={handlerClick}
           dataInitial={data}

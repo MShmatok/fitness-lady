@@ -1,8 +1,8 @@
 import { useMyContext } from 'js/useContext';
 import React from 'react';
 
-import { HeroContainer, MainTitle } from 'CommonStyle/Hero.styled';
-import { ExerciseSection } from './Exercise/Exercise.styled';
+import { HeroContainer, MainTitle } from 'commonStyle/Hero.styled';
+import { ExerciseSection } from '../exercise/Exercise.styled';
 
 const Result = () => {
   const { data } = useMyContext();

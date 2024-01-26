@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from './themeJSX';
+import theme from './variables';
 
 export const MainTitle = styled.h1`
   color: ${theme.colors.secondDark};

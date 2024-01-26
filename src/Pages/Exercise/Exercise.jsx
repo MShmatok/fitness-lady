@@ -1,19 +1,22 @@
-import { useMyContext } from 'js/useContext';
 import React from 'react';
+import { useMyContext } from 'js/useContext';
+import { useNavigate } from 'react-router';
+
+import Icon from 'components/icon/Icon';
 import { ExerciseSection, WrapperMain } from './Exercise.styled';
 import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'CommonStyle/Hero.styled';
-import Icon from 'components/Icon';
-import { useNavigate } from 'react-router';
+} from 'commonStyle/Hero.styled';
+
 const library = [
   { exercise: '1', title: 'Hardly at all' },
   { exercise: '2', title: 'Fitness 1-2 times a week' },
   { exercise: '3', title: 'Fitness 3-5 times a week' },
   { exercise: '4', title: 'Fitness 5-7 times a week' },
 ];
+
 const Exercise = () => {
   const { updateData } = useMyContext();
   const navigate = useNavigate();

@@ -1,9 +1,0 @@
-:root {
-  --colorsPrimaryLight: #ffffff;
-  
-  --animationDuration: 0.3s;
-  --animationCubicBezier: 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
-
-  --ident: 26px;
-  --items: 5;
-}

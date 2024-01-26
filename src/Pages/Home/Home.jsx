@@ -4,8 +4,8 @@ import {
   HeroContainer,
   MainDescription,
   MainTitle,
-} from 'CommonStyle/Hero.styled';
-import Card from './Item/Card';
+} from 'commonStyle/Hero.styled';
+import Card from './item/Card';
 import { useNavigate } from 'react-router-dom';
 import { useMyContext } from 'js/useContext';
 
